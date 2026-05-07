@@ -84,7 +84,8 @@
     目的為避免密碼以明文方式傳送，提高資料傳輸安全性。
     
 ISSUE
-1. HTTPS 憑證，怎麼迴避這個問題 ? OR 驗證
+1. HTTPS SSL 憑證，怎麼迴避這個問題 ? OR 驗證
+2. ssl 發行、server & crt 匯入 or 迴避
 
 
 ## 引文(Citation)：
