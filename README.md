@@ -77,7 +77,7 @@
     user@example.com
     若 Email 格式不正確，系統需提示錯誤訊息，並停止送出資料。
 
-6.  密碼加密\n
+6.  密碼加密
     在將密碼傳送至 WebAPI 前，需先使用：
     AES Counter Mode
     進行加密。
