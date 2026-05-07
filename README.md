@@ -82,6 +82,10 @@
     AES Counter Mode
     進行加密。
     目的為避免密碼以明文方式傳送，提高資料傳輸安全性。
+    
+ISSUE
+1. HTTPS 憑證，怎麼迴避這個問題 ? OR 驗證
+
 
 ## 引文(Citation)：
 Please cite the following if you make use of the code.
