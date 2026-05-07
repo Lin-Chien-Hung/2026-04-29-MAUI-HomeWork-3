@@ -6,7 +6,7 @@
 * Date       : 2026-05-07
 
 <p align="center">
-  <img src="./MainPage.png" width="300"/>
+  <img src="./MainPage.png" width="1000"/>
 </p>
 
 ## 摘要 (Abstract)
