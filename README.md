@@ -7,7 +7,6 @@
 
 <p align="center">
   <img src="./Images/MainPage.png" width="300"/>
-  <img src="./Images/DetailPage.png" width="300"/>
 </p>
 
 ## 摘要 (Abstract)
