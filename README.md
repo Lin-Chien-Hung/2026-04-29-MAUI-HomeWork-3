@@ -86,7 +86,7 @@
 ISSUE
 1. HTTPS SSL 憑證，怎麼迴避這個問題 ? OR 驗證
 2. ssl 發行、server & crt 匯入 or 迴避
-
+3. Community Toolkit 套件影片 or 網站
 
 ## 引文(Citation)：
 Please cite the following if you make use of the code.
