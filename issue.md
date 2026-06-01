@@ -6,8 +6,9 @@
 
 3. Community Toolkit 套件影片 or 網站
 
-MAUI SSL 處理方式 🔐
-1. 正式做法：SSL 憑證發行
+MAUI SSL 處理方式
+
+正式做法：SSL 憑證發行
 
 正式環境建議使用合法 CA 憑證，例如：
 
