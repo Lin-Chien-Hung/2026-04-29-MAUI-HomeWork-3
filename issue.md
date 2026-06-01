@@ -1,10 +1,10 @@
 # ISSUE
 
-HTTPS SSL 憑證，怎麼迴避這個問題 ? OR 驗證
+1. HTTPS SSL 憑證，怎麼迴避這個問題 ? OR 驗證
 
-ssl 發行、server & crt 匯入 or 迴避
+2. ssl 發行、server & crt 匯入 or 迴避
 
-Community Toolkit 套件影片 or 網站
+3. Community Toolkit 套件影片 or 網站
 
 # .NET MAUI HTTPS / SSL 憑證處理與 Community Toolkit 筆記
 
