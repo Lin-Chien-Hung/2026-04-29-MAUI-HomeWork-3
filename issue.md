@@ -6,6 +6,70 @@
 
 3. Community Toolkit 套件影片 or 網站
 
+MAUI SSL 處理方式 🔐
+1. 正式做法：SSL 憑證發行
+
+正式環境建議使用合法 CA 憑證，例如：
+
+DigiCert / GlobalSign / GoDaddy / Let's Encrypt / 公司內部 CA
+
+Server API 必須使用：
+
+https://your-domain.com
+
+不要用：
+
+https://localhost
+https://IP:port
+
+因為手機端驗證 SSL 時，會檢查憑證網域是否匹配。
+
+2. Server 匯入憑證 .pfx / .crt
+
+ASP.NET Core / Kestrel 可在 appsettings.json 設定 HTTPS 憑證，Kestrel 支援用設定檔或程式碼設定 HTTPS endpoint。
+
+{
+  "Kestrel": {
+    "Endpoints": {
+      "Https": {
+        "Url": "https://0.0.0.0:5001",
+        "Certificate": {
+          "Path": "cert/server.pfx",
+          "Password": "your-password"
+        }
+      }
+    }
+  }
+}
+
+開發環境也可用：
+
+dotnet dev-certs https --trust
+dotnet dev-certs https -ep ./cert/server.pfx -p your-password
+
+dotnet dev-certs 是 Microsoft 提供用來產生、信任、匯出本機 HTTPS 開發憑證的工具。
+
+3. MAUI 端迴避 SSL 驗證，僅限開發測試 ⚠️
+#if DEBUG
+var handler = new HttpClientHandler
+{
+    ServerCertificateCustomValidationCallback =
+        (message, cert, chain, errors) => true
+};
+
+var httpClient = new HttpClient(handler);
+#else
+var httpClient = new HttpClient();
+#endif
+
+ServerCertificateCustomValidationCallback 可用來自訂 Server 憑證驗證邏輯。
+
+正式環境不可使用：
+
+errors => true
+
+否則等於完全關閉 SSL 驗證，容易被中間人攻擊。
+
 # .NET MAUI HTTPS / SSL 憑證處理與 Community Toolkit 筆記
 
 ---
