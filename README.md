@@ -84,9 +84,16 @@
     目的為避免密碼以明文方式傳送，提高資料傳輸安全性。
     
 ## ◎ ISSUE
-1. HTTPS SSL 憑證，怎麼迴避這個問題 ? OR 驗證
-2. ssl 發行、server & crt 匯入 or 迴避
-3. Community Toolkit 套件影片 or 網站
+1. HTTPS / SSL 憑證驗證機制
+	- HTTPS 連線時，SSL/TLS 憑證驗證的流程為何？
+	- 當遇到憑證驗證失敗（例如自簽憑證、過期憑證或憑證鏈不完整）時，應如何正確處理？
+	- 在開發或測試環境中，是否有方式可以暫時略過（Bypass）憑證驗證？其風險與適用情境為何？
+
+2. SSL 憑證發行與部署
+	- SSL 憑證的申請（CSR）、簽發與部署流程為何？
+	- Server Certificate、CA Certificate（CRT）及憑證鏈之間的關係為何？
+	- 如何在伺服器、作業系統或應用程式中匯入與信任憑證？
+	- 若無法取得正式憑證，是否有其他替代方案或暫時性的處理方式？
 
 ## 引文(Citation)：
 Please cite the following if you make use of the code.
